@@ -8,6 +8,27 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 if(isset($_GET['id'])) {
     require "delete_news.inc.php";
 }
+$dom = [];
+if(!$dom) {
+    $dom = new DOMDocument("1.0", "utf-8");
+}
+$rss= $dom->createElement("rss");
+$title = $dom->createElement("title");
+$link = $dom->createElement("link");
+$descr=$dom->createElement("description");
+$pubdate=$dom->createElement("pubdate");
+$category = $dom ->createElement("category");
+$item = $dom ->createElement("item");
+$text = $dom ->createTextNode("$value['description']")
+$dom->appendChild($rss);
+$rss->appendChild($item);
+$item->appendChild($title);
+$item->appendChild($link);
+$item->appendChild($descr);
+$item->appendChild($pubdate);
+$descr->appendChild($text);
+$item->appendChild($category);
+
 ?>
 <!DOCTYPE html>
 <html>
