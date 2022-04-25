@@ -4,6 +4,11 @@ require_once "INewsDB.class.php";
 class NewsDB implements INewsDB
 {
     const DB_NAME = "news.db";
+    const RSS_NAME = "rss.xml";
+    const RSS_TITLE = "Новостная Лента";
+    const RSS_LINK = "http://news.sru/news.php";
+
+
     private $_db = null;
     //private $result = "";
 
@@ -90,6 +95,10 @@ private function db2Arr($data){
     function __destruct()
     {
         unset($this->_db);
+    }
+    private function createRSS()
+    {
+
     }
 
 }

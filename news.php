@@ -19,7 +19,7 @@ $descr=$dom->createElement("description");
 $pubdate=$dom->createElement("pubdate");
 $category = $dom ->createElement("category");
 $item = $dom ->createElement("item");
-$text = $dom ->createTextNode("$value['description']")
+$text = $dom ->createTextNode("");
 $dom->appendChild($rss);
 $rss->appendChild($item);
 $item->appendChild($title);
