@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<rss version="2.0">
+
+	<channel>
+   
+		<title>Заголовок новостной ленты</title>
+   
+		<link>Ссылка на новостную ленту (абсолютный URL)</link>
+   
+		<item>
+      
+			<title>Заголовок новости</title>
+			<link>Ссылка на новость (абсолютный URL)</link>
+			<description>Содержание новости</description>
+
+			<pubDate>Дата публикации новости</pubDate>
+			<category>Категория новости</category>
+		</item>
+	</channel>
+
+</rss>
+ 
